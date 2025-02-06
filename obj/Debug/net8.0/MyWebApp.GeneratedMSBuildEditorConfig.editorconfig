@@ -1,0 +1,219 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyWebApp
+build_property.RootNamespace = MyWebApp
+build_property.ProjectDir = /Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/hrytsai.andrii/Desktop/Навчання/MyWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Defects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmZWN0cy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Defects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmZWN0cy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Defects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmZWN0cy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Defects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmZWN0cy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Defects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmZWN0cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Equipment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Equipment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Equipment/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Equipment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Equipment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Home/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Inventory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50b3J5L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Inventory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50b3J5L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Inventory/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50b3J5L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Inventory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50b3J5L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Inventory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50b3J5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Payments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Payments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Payments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Payments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Payments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Rentals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudGFscy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Rentals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudGFscy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Rentals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudGFscy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Rentals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudGFscy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Rentals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudGFscy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Tariffs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFyaWZmcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Tariffs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFyaWZmcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Tariffs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFyaWZmcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Tariffs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFyaWZmcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Tariffs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFyaWZmcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x73cywpurk
