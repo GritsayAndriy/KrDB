@@ -30,5 +30,5 @@ public class Rental
 
     [Required]
     [MaxLength(50)]
-    public string Status { get; set; } = "active";
+    public string Status { get; set; } = "pending";
 }

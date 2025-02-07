@@ -66,7 +66,7 @@ namespace MyWebApp.Migrations
                     end_date DATE NOT NULL,
                     tariff_id INT,
                     total_price DECIMAL(10,2) NOT NULL,
-                    status NVARCHAR(50) CHECK (status IN ('active', 'completed', 'overdue')) NOT NULL DEFAULT 'active',
+                    status NVARCHAR(50) CHECK (status IN ('pending', 'active', 'completed', 'overdue')) NOT NULL DEFAULT 'active',
                     FOREIGN KEY (customer_id) REFERENCES customers(id) ON DELETE CASCADE,
                     FOREIGN KEY (inventory_id) REFERENCES inventory(id) ON DELETE CASCADE,
                     FOREIGN KEY (tariff_id) REFERENCES tariffs(id) ON DELETE SET NULL

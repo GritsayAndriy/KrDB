@@ -275,3 +275,4 @@
 /Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/obj/Debug/net8.0/MyWebApp.pdb
 /Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/obj/Debug/net8.0/MyWebApp.genruntimeconfig.cache
 /Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/obj/Debug/net8.0/ref/MyWebApp.dll
+/Users/hrytsai.andrii/Desktop/Навчання/MyWebApp/obj/Debug/net8.0/MyWebApp.sourcelink.json

@@ -9,8 +9,8 @@
         <div class="col-md-4">
             <h4>Create New Rental</h4>
             <div class="form-check">
-                <input name="IsNotExistingCustomer" type="checkbox" class="form-check-input" id="isNotExistingCustomer" />
-                <label class="form-check-label" for="isNotExistingCustomer">I am a new customer</label>
+                <input id="isNewCustomer" class="form-check-input" type="checkbox" name="isNewCustomer" value="true" />
+                <label class="form-check-label" for="isNewCustomer">I am a new customer</label>
             </div>
 
             <div class="form-group" id="CustomerIdBlock" >
@@ -71,7 +71,7 @@
 
 @section Scripts {
     <script>
-        document.getElementById("isNotExistingCustomer").addEventListener("change", function() {
+        document.getElementById("isNewCustomer").addEventListener("change", function() {
             var newCustomerFields = document.getElementById("newCustomerFields");
             newCustomerFields.style.display = this.checked ? "block" : "none";
             document.getElementById("CustomerIdBlock").style.display = this.checked ? "none" : "block"

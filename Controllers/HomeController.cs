@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using MyWebApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Storage;
+using System.Threading.Tasks;
 
 namespace MyWebApp.Controllers;
 
@@ -22,7 +24,7 @@ public class HomeController : Controller
         ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "FullName");
         ViewData["InventoryId"] = new SelectList(_context.Inventory, "Id", "SerialNumber");
         ViewData["TariffId"] = new SelectList(_context.Tariffs, "Id", "TariffName");
-        ViewData["PaymentMethods"] = new SelectList(PaymentMethod.GetAllPaymentMethods());
+        ViewData["PaymentMethods"] = new SelectList(PaymentMethod.GetAllPaymentMethods(), "Value", "Name");
 
         return View();
     }
@@ -40,7 +42,6 @@ public class HomeController : Controller
 
     // POST: Home/Create
     [HttpPost]
-    // [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(RentalCreateViewModel rentalViewModel, decimal paymentAmount)
     {
         if (ModelState.IsValid)
@@ -50,7 +51,7 @@ public class HomeController : Controller
                 try
                 {
                     Customer customer = null;
-                    if (rentalViewModel.IsNotExistingCustomer)
+                    if (rentalViewModel.isNewCustomer)
                     {
                         customer = new Customer
                         {
@@ -65,56 +66,79 @@ public class HomeController : Controller
                         await _context.SaveChangesAsync();
                     }
 
-                    // Якщо є існуючий клієнт, беремо його Id
-                    customer = rentalViewModel.IsNotExistingCustomer ? customer : await _context.Customers.FindAsync(rentalViewModel.CustomerId);
+                    customer = rentalViewModel.isNewCustomer ? customer : await _context.Customers.FindAsync(rentalViewModel.CustomerId);
 
-                    // Розрахунок загальної вартості оренди
                     var equipment = await _context.Inventory
                         .Where(i => i.Id == rentalViewModel.InventoryId)
                         .Select(i => i.Equipment)
                         .FirstOrDefaultAsync();
 
+                    decimal totalPrice = 0;
                     if (equipment != null)
                     {
-                        // var totalPrice = (rentalViewModel.EndDate - rentalViewModel.StartDate).Days * equipment.BasePricePerDay;
-                        // rentalViewModel.TotalPrice = totalPrice;
+                        Tariff tariff = await _context.Tariffs.FindAsync(rentalViewModel.TariffId);
+
+                        totalPrice = tariff.DiscountAmount(equipment.BasePricePerDay);
                     }
 
-                    // Додаємо оренду
-                    _context.Rentals.Add(rentalViewModel);
-
-                    // Додаємо платіж
-                    var payment = new Payment
-                    {
-                        RentalId = rentalViewModel.Id,
-                        PaymentDate = DateTime.Now,
-                        PaymentMethod = rentalViewModel.PaymentMethod, // Вказуємо спосіб оплати
-                        // Amount = rentalViewModel.TotalPrice
+                    Rental rental = new Rental{
+                        CustomerId = customer.Id,
+                        InventoryId = equipment.Id,
+                        TariffId = rentalViewModel.TariffId,
+                        StartDate = DateTime.Now,
+                        EndDate = DateTime.Now,
+                        TotalPrice = totalPrice,
                     };
-                    _context.Add(payment);
 
-                    // Зберігаємо оренду та платіж
+                    _context.Rentals.Add(rental);
+
                     await _context.SaveChangesAsync();
 
-                    // Підтверджуємо транзакцію
+                    var payment = new Payment
+                    {
+                        RentalId = rental.Id,
+                        PaymentDate = DateTime.Now,
+                        PaymentMethod = rentalViewModel.PaymentMethod,
+                        Amount = 0
+                    };
+                    
+                    _context.Add(payment);
+
+                    await _context.SaveChangesAsync();
+
                     await transaction.CommitAsync();
 
-                    return RedirectToAction(nameof(Index)); // Перехід на головну сторінку оренд
+                    ViewData["PaymentMethod"] = PaymentMethod.GetAllPaymentMethods().Find(item => item.Value == rentalViewModel.PaymentMethod);
+                    ViewData["PaymentId"] = payment.Id;
+                    
+                    int rentalId = rental.Id;
+                    rental = await _context.Rentals.Include(r => r.Inventory)
+                        .ThenInclude(i => i.Equipment)
+                        .FirstOrDefaultAsync(r => r.Id == rentalId);
+
+                    return View("Payment", rental);
                 }
                 catch (Exception ex)
                 {
                     await transaction.RollbackAsync();
                     ModelState.AddModelError("", "An error occurred while processing your request.");
+                    
                 }
             }
         }
 
-        // ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "FullName", rentalViewModel.CustomerId);
-        // ViewData["InventoryId"] = new SelectList(_context.Inventory, "Id", "SerialNumber", rentalViewModel.InventoryId);
-        // ViewData["TariffId"] = new SelectList(_context.Tariffs, "Id", "TariffName", rentalViewModel.TariffId);
-        // ViewData["PaymentMethods"] = new SelectList(PaymentMethod.GetAllPaymentMethods(), rentalViewModel.PaymentMethod);
+        return RedirectToAction(nameof(Index)); 
+    }
 
+    [HttpPost]
+    public async Task<IActionResult> ApprovePayment(int RentalId)
+    {
+        Rental rental = await _context.Rentals.FindAsync(RentalId);
+        rental.Status = "active";
 
-        return RedirectToAction(nameof(Index));
+        _context.Update(rental);
+        await _context.SaveChangesAsync();
+        
+        return RedirectToAction(nameof(Index), "Rentals");
     }
 }

@@ -2,13 +2,13 @@ public class RentalCreateViewModel
 {
     public int Id { get; set; }
     // Rental properties
-    public int CustomerId { get; set; }
+    public int? CustomerId { get; set; }
     public int InventoryId { get; set; }
     public int TariffId { get; set; }
     public string PaymentMethod { get; set; }
 
     // Flag for choosing existing customer or creating new one
-    public bool IsNotExistingCustomer { get; set; }
+    public bool isNewCustomer { get; set; }
 
     // New Customer properties
     public string? NewCustomerFullName { get; set; }

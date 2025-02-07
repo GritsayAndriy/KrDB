@@ -9,14 +9,14 @@ public class Payment
 
     [ForeignKey("Rental")]
     public int RentalId { get; set; }
-    public Rental Rental { get; set; }
+    public Rental? Rental { get; set; }
 
     [Required]
     public DateTime PaymentDate { get; set; }
 
     [Required]
     [MaxLength(50)]
-    public string PaymentMethod { get; set; }
+    public string? PaymentMethod { get; set; }
 
     [Required]
     public decimal Amount { get; set; }
